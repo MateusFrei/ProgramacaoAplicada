@@ -1,0 +1,62 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper
+{
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  border: 5px;
+  padding: 25px;
+}
+
+.wrapper .inputfield
+{
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+
+}
+
+.inputfield button
+{
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: #6959CD;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+
+.Lista li
+{
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: #f2f2f2;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+}
+
+.Lista li span
+{
+  position: absolute;
+  right: 0px;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  background: #e74c3c;
+  border-radius: 0 3px 3px 0;
+
+}
