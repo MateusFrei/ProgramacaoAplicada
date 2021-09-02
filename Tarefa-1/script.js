@@ -10,7 +10,7 @@ addBtn.onclick = ()=>{
 
   if (!userData.trim())
   {
-    alert("Erro!");
+    alert("Erro! You must type something.");
     inputBox.value = null;
     return 0;
   }
