@@ -4,16 +4,16 @@ let addBtn = document.querySelector(".inputfield button");
 let Lista = document.querySelector(".Lista");
 let dellBtn = document.querySelector(".footer");
 
-function create_date(){
-  let userData = inputBox.value;
-  if (userData.trim() == 0) {
-    alert("Erro");
-  }
-}
-
 addBtn.onclick = ()=>{
   let userData = inputBox.value;
   let getLocalStorage = localStorage.getItem("info");
+
+  if (!userData.trim())
+  {
+    alert("Erro!");
+    inputBox.value = null;
+    return 0;
+  }
 
   if (getLocalStorage == null) {
     listArr = [];
@@ -52,7 +52,6 @@ function deletetasktask(index){
   listArr.splice(index, 1);
   localStorage.setItem("info", JSON.stringify(listArr));
   show();
-  sdsd
 }
 
 dellBtn.onclick = ()=>{
