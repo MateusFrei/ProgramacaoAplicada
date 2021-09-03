@@ -1,20 +1,11 @@
-const calculator = document.getElementById("calculator");
-
-let name = document.getElementById("name");
-let height = document.getElementById("height");
-let pesa = document.getElementById("peso");
 
 function imc(){
-
-  nome = name.value;
-  altura = height.value;
-  pe = pesa.value;
+  let name = document.getElementById("name").value;
+  let height = document.getElementById("height").value;
+  let peso = document.getElementById("peso").value;
 
   let value = 0;
-  value = (pesa/(height * height));
-  alert(name);
-  alert(height);
-  alert(pesa);
+  value = (peso/(height * height));
 
   let classify = '';
 
