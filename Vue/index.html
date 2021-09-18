@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>BICICLETARIA</h1>
+      <h2>{{bikes}}</h2
+      <table>
+        {{}}
+      </table>
+    </div>
+
+
+
+  </body>
+  <script>
+    var app = new Vue({
+            el: '#app',
+            data: {
+                bike: 'BMX',
+                cor: 'Preta',
+                aro: null,
+                bikes:[{}]
+            },
+            methods: {
+                listarBikes(){
+                    this.bikes.push({bike: this.bike, cor: this.cor, aro: this.aro})
+                }
+            }
+        })
+  </script>
+</html>
