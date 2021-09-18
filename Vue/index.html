@@ -8,9 +8,26 @@
   <body>
     <div id="app">
       <h1>BICICLETARIA</h1>
-      <h2>{{bikes}}</h2
-      <table>
-        {{}}
+
+      <input type="text" name="" value=" Modelo: " v-model="bike">
+      <input type="text" name="" value=" Cor: " v-model="cor">
+      <input type="text" name="" value=" Aro: " v-model="aro">
+
+      <button type="button" name="button" @click="listarBikes()">Inserir Dados.</button>
+
+      <table border="1px">
+        <tr>
+          <th>Modelo </th>
+          <th>Cor </th>
+          <th>Aro </th>
+        </tr>
+
+        <tr v-for="b in bikes">
+          <td>{{b.bike}}</td>
+          <td>{{b.cor}}</td>
+          <td>{{b.aro}}</td>
+        </tr>
+
       </table>
     </div>
 
@@ -24,7 +41,7 @@
                 bike: 'BMX',
                 cor: 'Preta',
                 aro: null,
-                bikes:[{}]
+                bikes:[]
             },
             methods: {
                 listarBikes(){
