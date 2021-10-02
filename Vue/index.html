@@ -8,12 +8,8 @@
   <body>
     <div id="app">
       <h1>BICICLETARIA</h1>
-
-      <input type="text" name="" value=" Modelo: " v-model="bike">
-      <input type="text" name="" value=" Cor: " v-model="cor">
-      <input type="text" name="" value=" Aro: " v-model="aro">
-
-      <button type="button" name="button" @click="listarBikes()">Inserir Dados.</button>
+      
+      <formulario :bike="bike" :cor="cor" :aro="aro" @bikes="listar"  ></formulario>
 
       <table border="1px">
         <tr>
@@ -21,7 +17,6 @@
           <th>Cor </th>
           <th>Aro </th>
         </tr>
-          
         <tr v-for="b in bikes">
           <td>{{b.bike}}</td>
           <td>{{b.cor}}</td>
@@ -31,23 +26,21 @@
       </table>
     </div>
 
+    <template id="form">
+      <div id="formulario">
+
+        <input type="text" name="" value=" Modelo: " v-model="bike">
+        <input type="text" name="" value=" Cor: " v-model="cor">
+        <input type="text" name="" value=" Aro: " v-model="aro">
+
+        <button type="button" name="button" @click="listarBikes(bike, cor, aro)">Inserir Dados.</button>
+
+      </div>
+    </template>
+
+
 
 
   </body>
-  <script>
-    var app = new Vue({
-            el: '#app',
-            data: {
-                bike: 'BMX',
-                cor: 'Preta',
-                aro: null,
-                bikes:[]
-            },
-            methods: {
-                listarBikes(){
-                    this.bikes.push({bike: this.bike, cor: this.cor, aro: this.aro})
-                }
-            }
-        })
-  </script>
+  <script src="vue.js"></script>
 </html>
