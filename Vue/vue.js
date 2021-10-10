@@ -23,4 +23,4 @@ var app = new Vue({
                   this.bikes.push({bike: bike, cor: cor, aro: aro})
               }
           }
-      })
+})
