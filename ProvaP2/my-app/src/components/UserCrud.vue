@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import axios from "axios"
     export default {
         name: "UserCrud",
         data () {
@@ -32,5 +33,17 @@
                 ],
             }
         },
+        methods: {
+            inicializa(){
+                axios("http://localhost:3000/users")
+                .then((response)=> {
+                    this.users = response.data
+                })
+                .catch((error)=> console.log(error))
+            }
+        },
+        created(){
+            this.inicializa();
+        }
     }
 </script>
