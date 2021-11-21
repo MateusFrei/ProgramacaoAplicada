@@ -1,46 +1,78 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Caloi",
       "location": "Campos - Rj",
-      "diaria": "R$ 140.00"
-
+      "diaria": "140.00",
+      "modelo_id": 1
     },
     {
       "id": "2",
       "name": "Mountain Bike",
       "location": "Rio das Ostras - Rj",
-      "diaria": "R$ 210.00"
-
+      "diaria": "210.00",
+      "modelo_id": 2
     },
     {
       "id": "3",
       "name": "Race Bike",
       "location": "Macaé - Rj",
-      "diaria": "R$ 40.00"
-
+      "diaria": "40.00",
+      "modelo_id": 3
     },
     {
       "id": "4",
       "name": "Simple Bike",
       "location": "Macaé - Rj",
-      "diaria": "R$ 80.00"
-
+      "diaria": "80.00",
+      "modelo_id": 4
     },
     {
       "id": "5",
       "name": "Rali Bike",
       "location": "Cabo Frio - Rj",
-      "diaria": "R$ 90.00"
-
+      "diaria": "90.00",
+      "modelo_id": 5
     },
     {
       "id": "6",
       "name": "Bike de passeio",
       "location": "Arraial - Rj",
-      "diaria": "R$ 50.00"
+      "diaria": "50.00",
+      "modelo_id": 6
+    }
+  ],
 
+  "modelos":[
+    {
+      "id":1,
+      "descrição": "Comporta duas Pessoas."
+    },
+    {
+      "id":2,
+      "descrição": "Ideal para Trilhas."
+    },
+    {
+      "id":3,
+      "descrição": "Ideal para Asfalto."
+    },
+    {
+      "id":4,
+      "descrição": "Bicileta comum para o dia dia."
+    },
+    {
+      "id":5,
+      "descrição": "Pneus mais largos e para terranos lamacentos."
+    },
+    {
+      "id":6,
+      "descrição": "Ideal para familia."
+    },
+    {
+      "id":7,
+      "descrição": "Comporta duas Pessoas."
     }
   ]
+
 }
