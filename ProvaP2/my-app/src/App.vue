@@ -5,7 +5,7 @@
       <router-link to="/users">Aluguel de Bikes</router-link>
     </div>
     <div data-app>
-       <router-view />
+      <router-view />
     </div>
   </div>
 </template>
