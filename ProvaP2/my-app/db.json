@@ -12,14 +12,17 @@
       "name": "maas",
       "location": "sadsd",
       "diaria": "555",
-      "modelo_id": "2"
+      "modelo_id": "3"
+    },
+    {
+      "id": "12",
+      "name": "ee",
+      "location": "eee",
+      "diaria": "55",
+      "modelo_id": "4"
     }
   ],
   "modelos": [
-    {
-      "id": "1",
-      "descricao": "não so sua mãe KKKK"
-    },
     {
       "id": "2",
       "descricao": "Ideal para Trilhas."
