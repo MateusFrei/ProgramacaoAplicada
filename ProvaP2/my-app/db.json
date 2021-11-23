@@ -2,40 +2,18 @@
   "users": [
     {
       "id": "1",
-      "name": "Caloi",
-      "location": "Campos - Rj",
-      "diaria": "550",
-      "modelo_id": "1"
+      "name": "Poti",
+      "location": "amapá",
+      "diaria": "88",
+      "modelo_id": "2"
     },
     {
       "id": "2",
-      "name": "Mountain Bike",
-      "location": "Rio das Ostras - Rj",
-      "diaria": "210.00",
-      "modelo_id": "4"
-    },
-    {
-      "id": "3",
-      "name": "Race Bike",
-      "location": "Macaé - Rj",
-      "diaria": "40.00",
-      "modelo_id": "3"
-    },
-    {
-      "id": "5",
-      "name": "Rali Bike",
-      "location": "Cabo Frio - Rj",
-      "diaria": "90.00",
-      "modelo_id": "5"
-    },
-    {
-      "id": "6",
-      "name": "Bike de passeio",
-      "location": "Arraial - Rj",
-      "diaria": "50.00",
-      "modelo_id": "1"
+      "name": "maas",
+      "location": "sadsd",
+      "diaria": "555",
+      "modelo_id": "2"
     }
-
   ],
   "modelos": [
     {
