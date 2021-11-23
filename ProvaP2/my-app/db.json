@@ -4,15 +4,15 @@
       "id": "1",
       "name": "Caloi",
       "location": "Campos - Rj",
-      "diaria": "140.00",
-      "modelo_id": "4"
+      "diaria": "550",
+      "modelo_id": "1"
     },
     {
       "id": "2",
       "name": "Mountain Bike",
       "location": "Rio das Ostras - Rj",
       "diaria": "210.00",
-      "modelo_id": "2"
+      "modelo_id": "4"
     },
     {
       "id": "3",
@@ -20,13 +20,6 @@
       "location": "Macaé - Rj",
       "diaria": "40.00",
       "modelo_id": "3"
-    },
-    {
-      "id": "4",
-      "name": "Simple Bike",
-      "location": "Macaé - Rj",
-      "diaria": "80.00",
-      "modelo_id": "4"
     },
     {
       "id": "5",
@@ -42,11 +35,12 @@
       "diaria": "50.00",
       "modelo_id": "1"
     }
+
   ],
   "modelos": [
     {
       "id": "1",
-      "descricao": "Comporta duas Pessoas."
+      "descricao": "não so sua mãe KKKK"
     },
     {
       "id": "2",

@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/users">Aluguel de Bikes</router-link>
+      <router-link to="/Bicicletaria">Aluguel de Bikes </router-link> |
+       <router-link to="/Modelos">Modelos </router-link>     
     </div>
     <div data-app>
       <router-view />

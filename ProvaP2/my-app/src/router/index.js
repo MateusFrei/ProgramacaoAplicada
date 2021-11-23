@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../components/Home'
-import UserCrud from '../components/UserCrud'
-
+import Bicicletaria from '../components/Bicicletaria'
+import Modelos from '../components/Modelos'
 
 
 Vue.use(VueRouter)
@@ -14,10 +14,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/users',
-    component: UserCrud
+    path: '/Bicicletaria',
+    component: Bicicletaria
     
-  }
+  },
+  {
+    path: '/Modelos',
+    component: Modelos
+  },
 ]
 
 const router = new VueRouter({

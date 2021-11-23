@@ -7,7 +7,7 @@
     >
     <template v-slot:top>
       <v-toolbar flat>
-        <v-toolbar-title>My CRUD </v-toolbar-title>
+        <v-toolbar-title>Bicicletaria </v-toolbar-title>
           <v-divider class="mx-4" inset vertical></v-divider>
           <v-spacer></v-spacer>
           
@@ -48,11 +48,13 @@
 
                       <v-col cols="12" sm="2" md="2">
                         <v-text-field
+                          type="number"
                           v-model="editedItem.diaria"
                           label="Diaria"
+                          prefix="$"
                         ></v-text-field>
                       </v-col>
-
+                    <!-- Select  -->
                     <v-col cols="12" sm="6" md="4">
                       <v-select
                         v-model="editedItem.modelo_id"
@@ -62,7 +64,7 @@
                         item-value="id"
                         return-value
                         ></v-select>
-                      </v-col>
+                    </v-col>
                     </v-row>
                   </v-container>
                 </v-card-text>
@@ -98,14 +100,14 @@
 <script>
 import axios from "axios";
 export default {
-  name: "UserCrud",
+  name: "Bicicletaria",
   data: () => ({
     dialog: false,
     headers: [
       { text: "Id", value: "id" },
       { text: "Nome da Bike", value: "name" },
       { text: "Localização", value: "location" },
-      { text: "Diaria", value: "diaria" },
+      { text: "Diaria", value: "diaria"},
       { text: "Modelos", value: "modelo_id"},
       { text: "Ações", value: "actions", sortable: false },
     ],
@@ -117,14 +119,14 @@ export default {
       id: "",
       name: "",
       location: "",
-      diaria: "",
+      diaria:"$",
     },
     editedItemIndex: -1,
     defaultItem: {
       id: "",
       name: "",
       location: "",
-      diaria: "",
+      diaria: "$",
     },
   }),
   methods: {
